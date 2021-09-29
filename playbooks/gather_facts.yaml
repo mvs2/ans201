@@ -6,5 +6,5 @@
       cisco.ios.ios_facts:
         gather_subset: all 
         provider:
-            - username: marcus
-            - password: marcus
+            username: marcus
+            password: marcus
