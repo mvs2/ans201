@@ -4,7 +4,7 @@
   tasks:
     - name: Gather all legacy facts
       cisco.ios.ios_facts:
-        gather_subset: all  
-        username: marcus
-        password: marcus
-        
+        gather_subset: all 
+        provider:
+            - username: marcus
+            - password: marcus
