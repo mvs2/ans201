@@ -1,13 +1,12 @@
 ---
 - hosts: routers
   gather_facts: false
+  vars:
+   - connection_network_cli
   tasks:
     - name: Gather all legacy facts
       cisco.ios.ios_facts:
         gather_subset: all 
-        provider:
-            username: marcus
-            password: marcus
     
     -  name: Show host name
        debug:
