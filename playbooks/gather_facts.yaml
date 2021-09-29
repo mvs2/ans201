@@ -8,3 +8,7 @@
         provider:
             username: marcus
             password: marcus
+    
+    -  name: Show host name
+       debug:
+        msg: "Hostname here"
