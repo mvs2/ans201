@@ -1,5 +1,5 @@
 ---
-- hosts: router
+- hosts: routers
   gather_facts: false
   tasks:
     - name: Gather all legacy facts
