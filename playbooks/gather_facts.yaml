@@ -4,10 +4,7 @@
     - name: Gather all legacy facts
       cisco.ios.ios_facts:
         gather_subset: all 
-        provider:
-            authorize: yes
-            username: marcus
-            password: marcus
+        
             
     
     -  name: Show host name
