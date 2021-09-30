@@ -1,0 +1,5 @@
+ansible_network_os: ios
+ansible_connection: network_cli
+ansible_user: marcus
+ansible_password: marcus
+ansible_python_interpreter: /usr/bin/python3
