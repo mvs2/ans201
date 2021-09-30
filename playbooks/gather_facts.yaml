@@ -8,7 +8,7 @@
         provider:
             username: marcus
             password: marcus
-            connection: local
+            
     
     -  name: Show host name
        debug:
