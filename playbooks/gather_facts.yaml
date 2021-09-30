@@ -1,6 +1,6 @@
 ---
 - name: gathering facts
-  hosts: routers
+  hosts: all
   connection: network_cli
   gather_facts: true
 
