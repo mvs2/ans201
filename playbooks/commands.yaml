@@ -8,3 +8,8 @@
     - name: run show version on remote devices
       cisco.ios.ios_command:
         commands: show ip int br
+      register: output
+    
+    - name: show output
+      debug:
+        msg "Command output {{ output }}"
