@@ -2,14 +2,14 @@
 - name: gathering facts
   hosts: routers
   connection: network_cli
-  gather_facts: false
+  gather_facts: true
 
   tasks:
-    - name: ios facts
-      ios_facts:
-        gather_subset: all
-      register: output
+ #   - name: ios facts
+ #     ios_facts:
+ #       gather_subset: all
+ #     register: output
 
-    - name: debug output
-      debug:
-        var: output
+    #- name: debug output
+    #  debug:
+    #    var: output
