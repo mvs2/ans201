@@ -5,7 +5,7 @@
   gather_facts: true  
 
   tasks:
-    - name: run show version on remote devices
+    - name: run show ip int br
       cisco.ios.ios_command:
         commands: show ip int br
       register: output
