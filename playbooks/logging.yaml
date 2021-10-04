@@ -1,0 +1,15 @@
+---
+- name: syslog
+  hosts: routers
+  gather_facts: no
+
+  tasks:
+    - name: set syslog config
+      cisco.ios.ios_logging:
+        dest: "on"
+        level: informational
+      register: output
+
+    - name: debug
+      debug:
+        msg: " {{output}} "
