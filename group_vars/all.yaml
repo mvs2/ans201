@@ -4,5 +4,5 @@ ansible_user: marcus
 ansible_password: marcus
 ansible_python_interpreter: /usr/bin/python3
 
-ospf_network: 0.0.0.0 255.255.252.0
+ospf_network: 0.0.0.0 255.255.255.255
 ospf_area: 0
