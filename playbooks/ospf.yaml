@@ -1,0 +1,16 @@
+---
+- name: ospf testing
+  hosts: routers
+  connection: network_cli
+  gather_facts: true
+
+  tasks:
+    - name: Delete all OSPF config from interfaces
+      cisco.ios.ios_ospf_interfaces:
+        state: deleted
+
+      register: output
+
+    - name: show output
+      debug:
+        msg: "Command output {{ output }}"
